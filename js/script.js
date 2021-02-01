@@ -23,21 +23,7 @@ $(function(){
 		nextArrow: $('.fullscreen__arrows_right'),
 	});
 });
-$(window).resize(function() {
 
-	if ( $(window).width() < 1160 ) {
-		$(function(){
-			$('.footer-top__title').click(function(event) {
-				if($('.block').hasClass('one')){
-					$('footer-top__title').not($(this)).removeClass('active');
-					$('.footer-top__subtitle').not($(this).next()).slideUp(300);
-
-				}
-				$(this).toggleClass('active').next().slideToggle(300);
-			});
-		});
-	}
-});
 
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
